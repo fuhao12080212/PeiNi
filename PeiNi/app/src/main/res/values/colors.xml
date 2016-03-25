@@ -1,6 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="amaya_main_bg">#f6f6f6</color>
+    <color name="black">#000</color>
+    <color name="amaya_text_hint">#fff4f4f4</color>
+    <color name="text_view_bg_normal">#33000000</color>
+    <color name="text_view_bg_pressed">#999999</color>
+
+    <color name="text_normal">#e0e0e0</color>
+    <color name="red">#fd2c00</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="transparent_white">#99ffffff</color>
+    <color name="gray">#959595</color>
+    <color name="gray_light">#959595</color>
+    <color name="gray_light_hint">#bfbfbf</color>
+    <color name="gray_light_button">#d2d2d2</color>
+    <drawable name="transparent">#00ffffff</drawable>
+    <color name="scrollbar_start">#ff63959f</color>
+    <color name="scrollbar_center">#ff7eb3bd</color>
+    <color name="scrollbar_end">#ff45656f</color>
+
+    <color name="button_normal">#6693a3</color>
+    <color name="button_press">#ff45656f</color>
+
+    <!--> 任务列表页面 <!-->
+    <color name="task_title_pressed">#06C1AE</color>
+    <color name="task_mine_tip_bg">@color/task_title_pressed</color>
+    <color name="task_title_normal">#959595</color>
+    <color name="task_bot_right_bg_normal">#ffffff</color>
+    <color name="task_bot_right_bg_select">#ffe0e0e0</color>
+    <color name="task_bot_left_bg_normal">#6693a3</color>
+    <color name="task_bot_left_bg_select">#ff43a39f</color>
+    <color name="task_bot_left_text_normal">#ffffff</color>
+    <color name="task_bot_left_text_select">#ffb5e0ff</color>
+    <color name="task_pop_verify_normal">#6693a3</color>
+
+    <!-- 自定义标题 -->
+    <drawable name="title_item_focus">#88e0ddcc</drawable>
+    <drawable name="actionbar_bg_pop_defaut">#777473</drawable>
+
+    <!--> 任务详情页面 <!-->
+    <color name="task_bot_detail_bg_normal">#ffc73a33</color>
+
+    <!--> 设置页面 <!-->
+    <color name="setting_bg">#eee</color>
+    <color name="setting_user_status_pressed">@color/task_bot_left_bg_select</color>
+    <!--> 已完成页面<!-->
+    <color name="amaya_text_choose_normal">@color/amaya_text_hint</color>
+    <color name="amaya_text_choose_focus">@color/task_bot_right_bg_normal</color>
+
+    <color name="amaya_money_line">#ff484848</color>
+
+    <color name="item_deadline_normal">#ff232323</color>
+    <color name="item_deadline_red">#fff65145</color>
+    <color name="order_by_chief">#ff9da0</color>
+    <color name="amaya_toolbar_bg">@color/button_normal</color>
+    <color name="order_time_overtime_bg">#d66565</color>
+
+    <color name="toolbar_background">#323a45</color>
+
+    <color name="primary_green">#06C1AE</color>
+    <color name="primary_green_dark">#158274</color>
+    <color name="text_dark_gray">#959595</color>
+    <color name="text_light_gray">#BDBDBD</color>
+    <color name="divider_black">#3C3E3F</color>
+    <color name="background_gray">#EEEEEE</color>
+    <color name="background_light_gray">#F7F9FB</color>
+    <color name="text_black">#313131</color>
+    <color name="primary_orange">#F0B44A</color>
+    <color name="white">#ffffff</color>
+    <color name="bg_gray">#DCDCDC</color>
+    <color name="line_gray">#E9E9E9</color>
+    <color name="button_gray">#FAFAFA</color>
+    <color name="button_light_gray">#7D7D7D</color>
+    <color name="text_red_new">#FE4D3d</color>
+    <color name="primary_black">#232629</color>
+    <color name="text_primary_gray">#BFBFBF</color>
+    <color name="drawer_status_text_gray">#555555</color>
+    <color name="button_stroke">#DCDCDC</color>
+    <color name="item_list_bg">#F5F5F5</color>
+    <color name="equip_act_bg">#F5F5F5</color>
+    <color name="background_light_blue">#E2EAF4</color>
+    <color name="divider_gray">#C6D6E5</color>
+    <color name="progress_background">#3f06c1ac</color>
+    <color name="progress">#28dac8</color>
+    <color name="progress_text">#56f1e1</color>
+    <color name="drawer_line">#303235</color>
+    <color name="light_orange">#FDF4E4</color>
+    <color name="drawer_menu_gray">#AAAAAA</color>
+    <color name="user_center_avatar_border">#6ADACE</color>
+    <!--map route-->
+    <color name="distance_text_gray">#3c3c3c</color>
+    <color name="route_bottom_background_gray">#f0f0f0</color>
+    <color name="icon_in_resident_background">#fdffca</color>
+    <color name="icon_in_resident_stoke">#f0b44a</color>
+    <color name="icon_in_resident_text_color">#f0b44a</color>
+    <!-- grab or resident mode -->
+    <color name="mode_switcher_default_text_gray">#707070</color>
+    <!-- balance act -->
+    <color name="balance_act_bg">#F5F5F5</color>
+    <color name="balance_text_color">#f0b44a</color>
+    <color name="balance_line_color">#dcdcdc</color>
+    <!-- balance detail act -->
+    <color name="under_line_bg_color">#9b9b9b</color>
+    <color name="btn_confirm_hint">#c6c6c6</color>
+    <color name="btn_confirm">#9b9b9b</color>
+    <color name="listview_divider">#e9e9e9</color>
+    <color name="btn_bg">#d2d2d2</color>
+    <!-- comment label -->
+    <color name="positive_text_color">#6b450a</color>
+    <color name="negative_text_color">#313131</color>
+    <color name="positive_background_color">#fff6cd</color>
+    <color name="negative_background_color">#e9e9e9</color>
+    <color name="gray_light_text">#7d7d7d</color>
+    <color name="gray_divider">#ebeced</color>
 </resources>
