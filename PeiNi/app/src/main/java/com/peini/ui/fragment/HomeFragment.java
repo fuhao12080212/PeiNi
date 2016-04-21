@@ -1,5 +1,6 @@
 package com.peini.ui.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -8,13 +9,17 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.peini.R;
+import com.peini.ui.activity.HotelActivity;
+import com.peini.ui.activity.LocationInfoActivity;
 
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 /**
  * Created by fuhao on 16/3/7.
  */
 public class HomeFragment extends Fragment{
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -22,4 +27,15 @@ public class HomeFragment extends Fragment{
         ButterKnife.inject(this, view);
         return view;
     }
+
+    @OnClick(R.id.home_location)
+    public void JumpToLocation() {
+        startActivity(new Intent(getActivity(), LocationInfoActivity.class));
+    }
+
+    @OnClick(R.id.home_hotel)
+    public void JumpToHotel() {
+        startActivity(new Intent(getActivity(), HotelActivity.class));
+    }
+
 }

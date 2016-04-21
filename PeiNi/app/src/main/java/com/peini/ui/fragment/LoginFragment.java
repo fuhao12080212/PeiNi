@@ -7,17 +7,27 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import com.peini.R;
 import com.peini.ui.activity.MainTabActivity;
+import com.peini.util.CommonValue;
+import com.peini.util.SPUtil;
 
 import butterknife.ButterKnife;
+import butterknife.InjectView;
 import butterknife.OnClick;
 
 /**
  * Created by fuhao on 16/3/18.
  */
 public class LoginFragment extends Fragment {
+
+    @InjectView(R.id.login_phone)
+    EditText phone;
+    @InjectView(R.id.login_password)
+    EditText password;
 
     @Nullable
     @Override
@@ -29,6 +39,13 @@ public class LoginFragment extends Fragment {
 
     @OnClick(R.id.login)
     public void jumpToMain() {
-        startActivity(new Intent(getActivity(), MainTabActivity.class));
+        if (!phone.getText().toString().equals("") && phone.getText().toString().length() == 11 && password.getText().toString().equals(phone.getText().toString())) {
+            Toast.makeText(getActivity(), "登陆成功", Toast.LENGTH_SHORT).show();
+            SPUtil.save(CommonValue.SP_login, true);
+            startActivity(new Intent(getActivity(), MainTabActivity.class));
+        } else {
+            Toast.makeText(getActivity(), "用户名或者密码错误", Toast.LENGTH_SHORT).show();
+        }
+
     }
 }

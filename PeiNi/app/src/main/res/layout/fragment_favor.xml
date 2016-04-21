@@ -1,15 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/white"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <TextView
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="favor"
-        android:textColor="@color/primary_green"
-        android:textSize="30sp" />
-</LinearLayout>
+        android:background="@color/white"
+        android:paddingTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:background="@drawable/hotel"
+            android:text="酒店"
+            android:textSize="30sp"
+            android:gravity="center_vertical"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/hotel_pic1"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:background="@drawable/location_tag"
+            android:text="景点"
+            android:textSize="30sp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/location_pic2"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+</ScrollView>

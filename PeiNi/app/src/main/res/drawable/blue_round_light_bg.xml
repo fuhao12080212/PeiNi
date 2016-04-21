@@ -19,7 +19,7 @@
             <corners android:radius="10.0dp" />
             <!-- 圆角，你也可以对不同的角设置不同的数值 -->
 
-            <solid android:color="@color/gray_divider" />
+            <solid android:color="@color/gray_light_text" />
             <!-- 形状的填充色 -->
 
         </shape>

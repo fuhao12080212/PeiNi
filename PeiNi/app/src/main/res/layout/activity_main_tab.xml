@@ -1,9 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/fragment_main_tab"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
     android:orientation="vertical">
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="陪你"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/toolbar_background"
+        android:textStyle="bold"
+        android:background="@color/white"/>
+    <View
+        style="@style/Divider"></View>
+    <FrameLayout
+        android:id="@+id/fragment_main_tab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+    </FrameLayout>
+</LinearLayout>

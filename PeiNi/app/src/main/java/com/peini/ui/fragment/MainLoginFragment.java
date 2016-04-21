@@ -1,5 +1,6 @@
 package com.peini.ui.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -13,6 +14,9 @@ import android.widget.TextView;
 import com.peini.R;
 import com.peini.adapter.PagerAdapter;
 import com.peini.bean.TabInfo;
+import com.peini.ui.activity.MainTabActivity;
+import com.peini.util.CommonValue;
+import com.peini.util.SPUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -54,6 +58,10 @@ public class MainLoginFragment extends Fragment{
     }
 
     private void initView() {
+        if (SPUtil.getBoolean(CommonValue.SP_login, false)) {
+            startActivity(new Intent(getActivity(), MainTabActivity.class));
+            return;
+        }
         adapter = new PagerAdapter(getActivity(), getChildFragmentManager());
         tabList = new ArrayList<>();
         tabList.add(new TabInfo("登陆", LoginFragment.class, createBundle(LOGIN)));

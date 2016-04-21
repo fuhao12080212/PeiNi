@@ -1,5 +1,6 @@
 package com.peini.ui.fragment;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
@@ -12,6 +13,7 @@ import android.view.ViewGroup;
 import com.peini.R;
 import com.peini.adapter.PagerAdapter;
 import com.peini.bean.TabInfo;
+import com.peini.ui.activity.MainTabActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,6 +39,7 @@ public class MainTabFragment extends Fragment {
     private PagerAdapter adapter;
     private List<TabInfo> tabList;
     private String tabText[] = {"登陆", "注册"};
+    MainTabActivity activity;
 
     @Nullable
     @Override
@@ -69,6 +72,33 @@ public class MainTabFragment extends Fragment {
 //        }
 //        ((TabView) tabLayout.getTabAt(0).getTag()).getTabText().setTextColor(getResources().getColor(R.color.primary_green));
         viewPager.setCurrentItem(0);
+
+        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+                if (position == 1) {
+                    activity.setTitleVisible(View.GONE);
+                } else {
+                    activity.setTitleVisible(View.VISIBLE);
+                }
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
+    }
+
+    @Override
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+        this.activity = (MainTabActivity) activity;
     }
 
     private Bundle createBundle(int type){

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.peini.ui.view.LocationInfoView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/location_overview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_to_gray"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:background="@color/blue_dark" />
+
+        <TextView
+            android:id="@+id/location_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22dp"
+            android:text="南京路线概览"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/location_arrow"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/down_arrow" />
+    </RelativeLayout>
+
+    <View
+        style="@style/Divider"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/location_introduction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
+        android:text="有一个比较特殊的是center，不管是横向还是纵向的时候，它总有一个方向起作用, 因为LinearLayout他只可能有一个方向，这nm的，确实让人蛋疼。其实也有点道理吧，就是LinearLayout横向的时候，如果有多个孩子，那就不知道把谁放最右了，有两个解决方法吧，"
+        android:visibility="gone" />
+</com.peini.ui.view.LocationInfoView>
